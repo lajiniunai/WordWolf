@@ -24,6 +24,8 @@ function EndScreen({ lobby, resetGame, loginData }) {
       // check who the werewoles voted on
       // check vs who lobby.seer really was
       lobby?.werewolfVote.forEach((vote) => {
+        console.log(vote);
+        console.log(lobby?.seer.name);
         if (vote.name === lobby?.seer.name) {
           // wolves win
           return true;

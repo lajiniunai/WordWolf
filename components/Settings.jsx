@@ -29,7 +29,7 @@ function Settings({
   } = useDisclosure();
   const [minuteValue,
     setMinuteValue] = useState(lobby.timer < 0 ? 1 : lobby.timer);
-  const [wordAmount, setWordAmount] = useState(lobby.pickCount ? lobby.pickCount : 2);
+  const [wordAmount, setWordAmount] = useState(lobby.pickCount ? lobby.pickCount : 5);
 
   useEffect(() => {
     updateTimer({ minutes: minuteValue, seconds: 0 }, lobby);

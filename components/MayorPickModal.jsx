@@ -22,6 +22,9 @@ function MayorPickModal({ lobby, onMayorPick, loginData }) {
               <Box display="flex" justifyContent="space-evenly">
                 <Button background="#D19E61" name={lobby.words[0]} onClick={(e) => onWordPick(e)}>{lobby.words[0]}</Button>
                 <Button background="#D19E61" name={lobby.words[1]} onClick={(e) => onWordPick(e)}>{lobby.words[1]}</Button>
+                <Button background="#D19E61" name={lobby.words[2]} onClick={(e) => onWordPick(e)}>{lobby.words[2]}</Button>
+                <Button background="#D19E61" name={lobby.words[3]} onClick={(e) => onWordPick(e)}>{lobby.words[3]}</Button>
+                <Button background="#D19E61" name={lobby.words[4]} onClick={(e) => onWordPick(e)}>{lobby.words[4]}</Button>
               </Box>
             ) : <Box display="flex" justifyContent="center">Please wait!</Box>}
         </ModalBody>

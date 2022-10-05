@@ -36,7 +36,7 @@ class Lobby {
       seconds: 0,
     };
     this.timer = 1;
-    this.pickCount = 2;
+    this.pickCount = 5;
     this.gameState = 'lobby'; // four possible states [lobby, mayorPick, questionRound, endGame]
     this.players = {}; // an object that contains players in the game
     this.seats = {
